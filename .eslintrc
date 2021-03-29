@@ -6,7 +6,14 @@
             "jsx": false
         }
     },
-    "rules": {
+    extends: ["eslint:recommended"],
+    rules: {
+        "no-console": "error",
+        "curly": ["error", "all"],
+        "prefer-arrow-callback": "error",
+        "one-var": ["error", "never"],
+        "no-var": "error",
+        "prefer-const": "error",
         "semi": "error",
         "quotes": ["error", "single"]
     },
